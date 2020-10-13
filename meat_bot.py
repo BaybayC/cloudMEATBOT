@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 
 client = commands.Bot(command_prefix = ";")
@@ -19,4 +20,4 @@ async def on_member_remove(member):
 async def ping(ctx):
     await ctx.send("Ripped and Ready")
 
-client.run('NzY1NDMwODM1MjUxNTExMzA2.X4UtBA.t72CuP_83s6ydZs1WzljPj6rjJ4')
+client.run(os.envoiron['DISCORD_TOKEN'])
