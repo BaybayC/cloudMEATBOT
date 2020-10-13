@@ -21,7 +21,7 @@ async def on_message(message):
     if message.author.bot:
         return
     else:
-        await message.channe.send("Cute and Cutiest")
+        await message.channel.send("Cute and Cutiest")
 
 @client.command()
 async def ping(ctx):
