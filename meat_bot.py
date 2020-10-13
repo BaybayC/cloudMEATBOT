@@ -21,7 +21,7 @@ async def ping(ctx):
     await ctx.send("Ripped and Ready")
 
 @client.command()
-    async def gay(ctx):
-        await ctx.send("ULTIIIMAATEEECOOWWWLEVELL!!!")
+async def gay(ctx):
+    await ctx.send("ULTIIIMAATEEECOOWWWLEVELL!!!")
 
 client.run(os.environ['DISCORD_TOKEN'])
