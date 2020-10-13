@@ -16,13 +16,6 @@ async def on_member_join(member):
 async def on_member_remove(member):
     print(f'{member} has left the meat gang. f in the chat pls.')
 
-@client.event
-async def on_message(message):
-    if message.author.bot:
-        return
-    else:
-        await message.channel.send("Cute and Cutiest")
-
 @client.command()
 async def ping(ctx):
     await ctx.send("Ripped and Ready")
