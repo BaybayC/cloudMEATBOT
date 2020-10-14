@@ -20,11 +20,9 @@ async def on_member_remove(member):
 async def ping(ctx):
     await ctx.send("Ripped and Ready")
 
-@client.command(aliases=['weird'])
+@client.command()
 async def weird(ctx):
     await ctx.send(f'ULTIIIMAATEEECOOWWWLEVELL!!!')
-
-client.run(os.environ['DISCORD_TOKEN'])
 
 @client.command(aliases = ['fate'])
 async def _8Ball(ctx, *, question):
@@ -39,3 +37,5 @@ async def _8Ball(ctx, *, question):
                 'Dududuudududududududu, YES indeed',
                 'SICKO MODE YUH']
     await ctx.send(random.choice(responses))
+
+client.run(os.environ['DISCORD_TOKEN'])
