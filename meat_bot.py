@@ -26,7 +26,7 @@ async def weird(ctx):
 
 client.run(os.environ['DISCORD_TOKEN'])
 
-@client.command(aliases=['fate'])
+@client.command()
 async def fate(ctx, *, question):
     responses = ['Yuh bruh.',
                 'Shhhhhiii maybe :)',
