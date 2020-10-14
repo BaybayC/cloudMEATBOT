@@ -22,6 +22,6 @@ async def ping(ctx):
 
 @client.command()
 async def weird(ctx):
-    await client.say("ULTIIIMAATEEECOOWWWLEVELL!!!")
+    await ctx.send(f'ULTIIIMAATEEECOOWWWLEVELL!!!')
 
 client.run(os.environ['DISCORD_TOKEN'])
