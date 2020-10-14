@@ -26,8 +26,8 @@ async def weird(ctx):
 
 client.run(os.environ['DISCORD_TOKEN'])
 
-@client.command()
-async def fate(ctx, *, question):
+@client.command(aliases = ['fate'])
+async def _8Ball(ctx, *, question):
     responses = ['Yuh bruh.',
                 'Shhhhhiii maybe :)',
                 'Yeahh.. Sike, nah.',
@@ -38,4 +38,4 @@ async def fate(ctx, *, question):
                 'Absolutely, unimaginably no.',
                 'Dududuudududududududu, YES indeed',
                 'SICKO MODE YUH']
-    await ctx.send(f'{random.choice(responses)}')
+    await ctx.send(random.choice(responses))
