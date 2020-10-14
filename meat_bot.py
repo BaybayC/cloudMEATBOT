@@ -20,7 +20,7 @@ async def on_member_remove(member):
 async def ping(ctx):
     await ctx.send("Ripped and Ready")
 
-@client.command()
+@client.command(aliases=['weird'])
 async def weird(ctx):
     await ctx.send(f'ULTIIIMAATEEECOOWWWLEVELL!!!')
 
