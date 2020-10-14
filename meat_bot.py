@@ -25,3 +25,17 @@ async def weird(ctx):
     await ctx.send(f'ULTIIIMAATEEECOOWWWLEVELL!!!')
 
 client.run(os.environ['DISCORD_TOKEN'])
+
+@client.command(aliases=['fate'])
+async def fate(ctx, *, question):
+    responses = ['Yuh bruh.',
+                'Shhhhhiii maybe :)',
+                'Yeahh.. Sike, nah.',
+                'Seems weird, nah.',
+                'Tis uncertain chief.',
+                'I guess so...',
+                'YES',
+                'Absolutely, unimaginably no.',
+                'Dududuudududududududu, YES indeed',
+                'SICKO MODE YUH']
+    await ctx.send(f'{random.choice(responses)}')
