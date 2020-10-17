@@ -36,7 +36,8 @@ async def _8Ball(ctx, *, question):
                 'YES',
                 'Absolutely, unimaginably no.',
                 'Dududuudududududududu, YES indeed',
-                'SICKO MODE YUH']
+                'SICKO MODE YUH',
+                'Stop asking me questions.']
     await ctx.send(random.choice(responses))
 
 client.run(os.environ['DISCORD_TOKEN'])
